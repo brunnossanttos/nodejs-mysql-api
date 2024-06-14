@@ -13,13 +13,20 @@ import {
 import { UserService } from './user.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
-import { ApiBody, ApiHeader, ApiOperation, ApiQuery } from '@nestjs/swagger';
+import {
+  ApiBody,
+  ApiHeader,
+  ApiOperation,
+  ApiQuery,
+  ApiTags,
+} from '@nestjs/swagger';
 import { CreateUserBadgeDto } from './dto/create-user-badge.dto';
 import { AuthGuard } from '@nestjs/passport';
 import { UserBadgesService } from './user-badges.service';
 import { IPaginationParams } from 'src/badge/domain/pagination-params';
 import { Response } from 'express';
 
+@ApiTags('Usuários')
 @Controller('users')
 export class UserController {
   constructor(

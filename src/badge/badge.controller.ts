@@ -13,11 +13,18 @@ import {
 import { BadgeService } from './badge.service';
 import { CreateBadgeDto } from './dto/create-badge.dto';
 import { UpdateBadgeDto } from './dto/update-badge.dto';
-import { ApiBody, ApiHeader, ApiOperation, ApiQuery } from '@nestjs/swagger';
+import {
+  ApiBody,
+  ApiHeader,
+  ApiOperation,
+  ApiQuery,
+  ApiTags,
+} from '@nestjs/swagger';
 import { IPaginationParams } from './domain/pagination-params';
 import { AuthGuard } from '@nestjs/passport';
 import { Response } from 'express';
 
+@ApiTags('Emblemas')
 @Controller('badges')
 export class BadgeController {
   constructor(private readonly badgeService: BadgeService) {}
