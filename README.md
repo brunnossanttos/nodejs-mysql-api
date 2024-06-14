@@ -59,5 +59,5 @@ $ npm run start:prod
 2. **Executar Migrações**: Instruções claras sobre como rodar as migrações do Prisma para configurar o banco de dados corretamente.
 3. **Popular Banco de Dados com Emblemas**: Mantém a instrução existente para rodar o comando `seed`.
 
-- Author - Bruno Santos
+- Autor - Bruno Santos
 - [LinkenId](https://www.linkedin.com/in/bruno-santos-850a28159/)
